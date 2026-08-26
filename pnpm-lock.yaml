@@ -122,7 +122,7 @@ importers:
         version: 17.0.0(postcss@8.5.16)(stylelint@17.14.0(supports-color@10.2.2)(typescript@6.0.3))
       stylelint-config-tailwindcss:
         specifier: 1.0.1
-        version: 1.0.1(stylelint@17.14.0(supports-color@10.2.2)(typescript@6.0.3))(tailwindcss@4.3.2)
+        version: 1.0.1(stylelint@17.14.0(supports-color@10.2.2)(typescript@6.0.3))(tailwindcss@4.3.3)
       stylelint-order:
         specifier: 8.1.1
         version: 8.1.1(stylelint@17.14.0(supports-color@10.2.2)(typescript@6.0.3))
@@ -136,8 +136,8 @@ importers:
         specifier: 6.0.2
         version: 6.0.2(stylelint@17.14.0(supports-color@10.2.2)(typescript@6.0.3))
       tailwindcss:
-        specifier: 4.3.2
-        version: 4.3.2
+        specifier: 4.3.3
+        version: 4.3.3
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -4522,8 +4522,8 @@ packages:
   tailwind-merge@3.6.0:
     resolution: {integrity: sha512-uxL7qAVQriqRQPAyK3pj66VqskWqoZ37PW94jwOTwNfq/z9oyu1V+eqrZqtR2+fCiXdYOZe/Modt8GtvqNzu+w==}
 
-  tailwindcss@4.3.2:
-    resolution: {integrity: sha512-WtctNNSH8A9jlMIqxzuYumOHU5uGZyRv0Q5svQl+oEPy5w84YpBxdb7MdqyiSPQge5jTJ6zFQLq0PFygdccSBA==}
+  tailwindcss@4.3.3:
+    resolution: {integrity: sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==}
 
   tinybench@2.9.0:
     resolution: {integrity: sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==}
@@ -8541,17 +8541,17 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-html@0.36.0(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39):
+  postcss-html@0.36.0(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39):
     dependencies:
       htmlparser2: 3.10.1
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@8.5.16)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@8.5.16)
 
-  postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39):
+  postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39):
     dependencies:
       '@babel/core': 7.29.0(supports-color@10.2.2)
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@8.5.16)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@8.5.16)
     transitivePeerDependencies:
       - supports-color
 
@@ -8559,10 +8559,10 @@ snapshots:
     dependencies:
       postcss: 7.0.39
 
-  postcss-markdown@0.36.0(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39):
+  postcss-markdown@0.36.0(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39):
     dependencies:
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@8.5.16)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@8.5.16)
       remark: 10.0.1
       unist-util-find-all-after: 1.0.5
 
@@ -8623,14 +8623,14 @@ snapshots:
       lodash: 4.18.1
       postcss: 7.0.39
 
-  postcss-syntax@0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@8.5.16):
+  postcss-syntax@0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@8.5.16):
     dependencies:
       postcss: 8.5.16
     optionalDependencies:
-      postcss-html: 0.36.0(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39)
-      postcss-jsx: 0.36.4(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39)
+      postcss-html: 0.36.0(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39)
+      postcss-jsx: 0.36.4(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39)
       postcss-less: 3.1.4
-      postcss-markdown: 0.36.0(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39)
+      postcss-markdown: 0.36.0(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39)
       postcss-scss: 2.1.1
 
   postcss-value-parser@3.3.1: {}
@@ -9361,10 +9361,10 @@ snapshots:
       stylelint: 17.14.0(supports-color@10.2.2)(typescript@6.0.3)
       stylelint-config-recommended: 18.0.0(stylelint@17.14.0(supports-color@10.2.2)(typescript@6.0.3))
 
-  stylelint-config-tailwindcss@1.0.1(stylelint@17.14.0(supports-color@10.2.2)(typescript@6.0.3))(tailwindcss@4.3.2):
+  stylelint-config-tailwindcss@1.0.1(stylelint@17.14.0(supports-color@10.2.2)(typescript@6.0.3))(tailwindcss@4.3.3):
     dependencies:
       stylelint: 17.14.0(supports-color@10.2.2)(typescript@6.0.3)
-      tailwindcss: 4.3.2
+      tailwindcss: 4.3.3
 
   stylelint-order@2.2.1(stylelint@9.10.1(supports-color@10.2.2)):
     dependencies:
@@ -9473,10 +9473,10 @@ snapshots:
       normalize-selector: 0.2.0
       pify: 4.0.1
       postcss: 7.0.39
-      postcss-html: 0.36.0(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39)
-      postcss-jsx: 0.36.4(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39)
+      postcss-html: 0.36.0(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39)
+      postcss-jsx: 0.36.4(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39)
       postcss-less: 3.1.4
-      postcss-markdown: 0.36.0(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39)
+      postcss-markdown: 0.36.0(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39)
       postcss-media-query-parser: 0.2.3
       postcss-reporter: 6.0.1
       postcss-resolve-nested-selector: 0.1.6
@@ -9484,7 +9484,7 @@ snapshots:
       postcss-sass: 0.3.5
       postcss-scss: 2.1.1
       postcss-selector-parser: 3.1.2
-      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss@8.5.16))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@8.5.16)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@8.5.16))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@8.5.16)
       postcss-value-parser: 3.3.1
       resolve-from: 4.0.0
       signal-exit: 3.0.7
@@ -9548,7 +9548,7 @@ snapshots:
 
   tailwind-merge@3.6.0: {}
 
-  tailwindcss@4.3.2: {}
+  tailwindcss@4.3.3: {}
 
   tinybench@2.9.0: {}
 
