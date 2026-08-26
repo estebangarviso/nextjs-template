@@ -1,0 +1,42 @@
+import { defineConfig } from 'vitest/config';
+import react from '@vitejs/plugin-react-swc';
+import { resolve } from 'node:path';
+
+export default defineConfig({
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	plugins: [react()] as any,
+	resolve: {
+		alias: {
+			'@': resolve(__dirname, 'src'),
+			'@core': resolve(__dirname, 'src/core'),
+			'@modules': resolve(__dirname, 'src/modules'),
+			'@shared': resolve(__dirname, 'src/shared'),
+			'@ui': resolve(__dirname, 'src/shared/ui'),
+		},
+	},
+	test: {
+		environment: 'happy-dom',
+		include: ['src/**/*.{spec,test}.{ts,tsx}'],
+		reporters: ['verbose'],
+		setupFiles: ['@testing-library/jest-dom/vitest'],
+		coverage: {
+			include: ['src/**/*.{ts,tsx}'],
+			reporter: ['text', 'text-summary', 'lcov', 'cobertura', 'json'],
+			reportsDirectory: '.reports/coverage',
+			exclude: [
+				'**/*.d.ts',
+				'**/index.ts',
+				'src/app/**/layout.tsx',
+				'src/app/**/page.tsx',
+				'**/__tests__/**',
+				'**/*.{test,spec}.*',
+			],
+			thresholds: {
+				branches: 80,
+				functions: 80,
+				lines: 80,
+				statements: 80,
+			},
+		},
+	},
+});
